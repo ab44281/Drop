@@ -1,0 +1,8 @@
+<div class="form-group">
+  <label class="control-label" for="Country">Society:</label>
+  <!-- [(ngModel)]="societies" -->
+  <select  name="societies" id="societies" class="form-control">
+      <option value="0" selected="true">Select Society</option>
+    <option *ngFor="let so of societies" value="{{so.societyid}}">{{so.societyname}}</option>
+  </select>
+</div>
